@@ -1,38 +1,141 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav{
+  background: rgb(11, 85, 196);
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
 }
 
-.App-link {
-  color: #61dafb;
+.newNav{
+  background: rgb(5, 48, 104);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.btnMode{
+  width: 4rem;
+}
+
+.btnIcons{
+  background: rgb(4,67,131);
+  border:1px solid transparent;
+  width: 4rem;
+  padding:0.2rem 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin:0 auto;
+  position: relative;
+  border-radius: 3rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  /* border:1px solid rgb(187, 186, 186); */
+}
+
+.newBtnIcons{
+  background: #363636 !important;
+}
+
+.fa-moon{
+  color: #fefefe;
+}
+
+.fa-sun{
+  color: orange;
+}
+
+.circle{
+  width:50%;
+  height: 18px;
+  background: rgb(192,184,149);
+  position: absolute;
+  left:0;
+  border-radius: 3rem;
+  transition: all 0.3s ease-in-out;
+  border:1px solid rgb(187, 186, 186);
+}
+
+.newCircle{
+  position: absolute;
+  left:50%;
+}
+
+.situation{
+  margin-left: 20px;
+ 
+}
+
+.header{
+  min-height: calc(100vh - 44.4px);
+  background: rgb(228, 228, 228);
+  text-align: center;
+ transition: all 0.3s ease-in-out;
+position: relative;
+}
+
+.newHeader{
+  background: #323232;
+ 
+ 
+}
+
+.texts{
+  box-shadow: 1px 1px 4px 1px gray;
+  width: 90%;
+  padding:10px;
+  position: absolute;
+  top:200px;
+  left:50%;
+  transform: translate(-50% , -50%) scale(1);
+  transition: all 0.3s ease-in-out;
+ 
+}
+
+.h2{
+  transition: all 0.3s ease-in-out;
+}
+
+.newH2{
+  color:#fefefe;
+  font-style: italic;
+  letter-spacing: 0.2rem;
+}
+
+
+.subscribe{
+  transition: all 0.3s ease-in-out;
+}
+.newSubscribe{
+  color: #fff;
+  letter-spacing: 0.2rem;
+  font-style: italic;
+}
+
+
+.newTexts{
+  color: orange;
+  background: #424242;
+  box-shadow: 1px 0px 4px 1px rgb(209, 208, 208);
+  transform:rotate(5deg) scale(1.1) translate(-50% , -50%) ;
+   
+}
+
+@media screen and (min-width:664px){
+  .texts{
+    width: 50%;
   }
 }
+
+
+
